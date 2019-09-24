@@ -48,4 +48,4 @@ const SolutionSchema = new Schema({
     // Do not think about it for now
 })
 
-module.exports = Solution = mongoose.model('solutions', SolutionSchema);
+module.exports =  SolutionSchema;
