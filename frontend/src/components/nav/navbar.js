@@ -1,8 +1,8 @@
 import React from 'react';
 // import { Link } from 'react-router-dom'
-import './navbar.css'
 import logo from './../../logo.png';
 import demouser from '../../demo-user.png'
+import './navbar.css'
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -12,6 +12,7 @@ class NavBar extends React.Component {
     }
 
     logoutUser(e) {
+        // debugger
         e.preventDefault();
         this.props.logout();
     }
@@ -20,15 +21,10 @@ class NavBar extends React.Component {
     getLinks() {
         if (this.props.loggedIn) {
             return (
-                // <div>
-                //     <Link to={'/tweets'}>All Tweets</Link>
-                //     <Link to={'/profile'}>Profile</Link>
-                //     <Link to={'/new_tweet'}>Write a Tweet</Link>
-                //     <button onClick={this.logoutUser}>Logout</button>
-                // </div>
+               
                 <div>
                     <div id="navigation-bar">
-                        <a href="#main-page"><img id="logo" src={logo} alt=""></img></a>
+                        <a href="#"><img id="logo" src={logo} alt=""></img></a>
                             <div className="dropdown">
                             <button className="dropbtn"><a href="#dropdown"><img id="profile-picture" src={demouser} alt=""></img></a></button>
                                     
@@ -45,9 +41,7 @@ class NavBar extends React.Component {
             return (
                 <div>
                     <div id="navigation-bar">
-                        <a href="#main-page"><img id="logo" src={logo} alt=""></img></a>
-                        {/* <Link to={'/signup'}>Signup</Link> */}
-                        {/* <Link to={'/login'}>Login</Link> */}
+                        <a href="#"><img id="logo" src={logo} alt=""></img></a> 
                     </div>
                 </div>
         

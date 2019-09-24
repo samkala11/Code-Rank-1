@@ -1,0 +1,75 @@
+.session-form-container {
+  margin-bottom: 0;
+  border: 0;
+  /* display: inline-block; */
+  text-align: center;
+  padding-right: 50px;
+  /* background-color: red; */
+}
+
+.session-form-content {
+  display: flex;
+  flex-direction: column;
+  font-family: "GalaxieCopernicus-Book";
+  padding: 30px;
+  width: 480px;
+  box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+  padding: 25px 25px 30px 25px;
+  padding-bottom: 50px;
+  color: black;
+  border-bottom-left-radius: 15px;
+  padding-top: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: white;
+}
+
+.session-input-field {
+    /* position: relative; */
+    height: 50px;
+    /* margin: 0; */
+    padding: 0 20px;
+    /* vertical-align: middle; */
+    background: #fff;
+    border: 3px solid #fff;
+    font-family: 'Fira Code';
+    font-size: 16px;
+    line-height: 50px;
+    color: #888;
+    /* align-self: left; */
+    width: 80%;
+    /* -moz-border-radius: 4px;
+    -webkit-border-radius:  4px; */
+    border-radius: 4px;
+    box-shadow: none; 
+ 
+}
+
+.session-submit-button {
+  background: rgb(59, 58, 58);
+  box-shadow: 0 4px 15px 0 redrgba(27,169,76,.5);
+  border-radius: 7px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Fira Code';
+  height: 50px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+.session-submit-button:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 12px 0 redrgba(27,169,76,.5);
+  
+}
+
+#signup-message {
+ font-family: "GalaxieCopernicus-Book";
+ color: rgb(59, 58, 58);
+ font-weight: 200;
+ font-size: 20px;
+ font-family: "Fira Code";
+}
+
