@@ -14,10 +14,10 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    // date: {
-    //     type: Date,
-    //     default: Date.now
-    // }
+    date: {
+        type: Date,
+        default: Date.now
+    },
     enrolledLanguages: [
         {
         type: String, //would be either an array of JS & Ruby or an Array of one language

@@ -1,13 +1,35 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+const CommentSchema = new Schema({
+    date: {
+        type: Date,
+        default: Date.now
+    },
+    body: {
+        type: String,
+        required: true
+    },
+    author: {
+        type: Schema.Types.ObjectId,
+        ref: 'users',
+        required: true
+    }
+})
+
+
 const SolutionSchema = new Schema({
-    _author: {
+    date: {
+        type: Date,
+        default: Date.now
+    },
+    
+    author: {
         type: Schema.Types.ObjectId,
         ref: 'users',
         required: true
     },
-    _question: {
+    question: {
         type: Schema.Types.ObjectId,
         ref: 'problems',
         required: true
@@ -22,23 +44,7 @@ const SolutionSchema = new Schema({
     }
     ,
     upvotes: [{ type: Schema.Types.ObjectId, ref: 'users' }],
-    comments: [
-        {
-            body: {
-                type: String,
-                required: true
-            },
-            date: {
-                type: Date,
-                default: Date.now
-            },
-            _author: {
-                type: Schema.Types.ObjectId,
-                ref: 'users',
-                required: true
-            }
-        }
-    ]
+    comments: [CommentSchema]
     // Do not think about it for now
 })
 

@@ -7,7 +7,11 @@ const ProblemSchema = new Schema({
     //     ref: 'users',
     //     required: true
     // }, /!\ Should not be needed
-
+    date: {
+        type: Date,
+        default: Date.now
+    },
+    
     language: {
         type: String,
         required: true
