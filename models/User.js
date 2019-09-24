@@ -40,7 +40,7 @@ const UserSchema = new Schema({
             default: 0
         }, 
 
-        languageShown: {
+        language: {
             type: String,
             required: true
         }///!\ DO WE NEED THE LEVEL LANGUAGE HERE?

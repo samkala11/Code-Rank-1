@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const SolutionSchema = require('./Solution')
 
-const ProblemSchema = new Schema({
+const JSProblemSchema = new Schema({
     // _author: {
     //     type: Schema.Types.ObjectId,
     //     ref: 'users',
@@ -11,14 +12,12 @@ const ProblemSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    
-    language: {
-        type: String,
-        required: true
-    },
+    solutions: [SolutionSchema],
+
+
 
     orderNumber: {
-        type: Integer,
+        type: Number,
         required: true // Gotta be unique
     },//Number of the question, insted of havin an ID of random characters we will have a whole integer
 
@@ -65,4 +64,4 @@ const ProblemSchema = new Schema({
     // Categories the problem belongs to
 })
 
-module.exports = Problem = mongoose.model('problems', ProblemSchema);
+module.exports = JSProblem = mongoose.model('jsproblems', JSProblemSchema);
