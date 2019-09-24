@@ -2,6 +2,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom'
 import logo from './../../logo.png';
 import demouser from '../../demo-user.png'
+import { Link } from 'react-router-dom';
 import './navbar.css'
 
 class NavBar extends React.Component {
@@ -26,7 +27,7 @@ class NavBar extends React.Component {
                     <div id="navigation-bar">
                         <a href="#"><img id="logo" src={logo} alt=""></img></a>
                             <div className="dropdown">
-                            <button className="dropbtn"><a href="#dropdown"><img id="profile-picture" src={demouser} alt=""></img></a></button>
+                            <button className="dropbtn"><img id="profile-picture" src={demouser} alt=""></img></button>
                                     
                                     <div className="dropdown-content">
                                         <a href="#">Link 1</a>
@@ -42,6 +43,7 @@ class NavBar extends React.Component {
                 <div>
                     <div id="navigation-bar">
                         <a href="#"><img id="logo" src={logo} alt=""></img></a> 
+                        <span><Link to="/login"></Link></span>
                     </div>
                 </div>
         

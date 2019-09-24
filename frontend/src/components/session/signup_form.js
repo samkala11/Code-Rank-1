@@ -93,14 +93,15 @@ class SignupForm extends React.Component {
                             placeholder="Confirm Password"
                             className="session-input-field"
                         />
-                        <br />
-                        <input type="submit" value="Sign Up" className="session-submit-button" />
+                       
+                        <br/>
+                        <input type="submit" value="Sign Up" className="session-submit-button"/>
                         {this.renderErrors()}
-                        <Link to="/login" className="session-submit-button"> go to Login</Link>
+
                     </div>
                 </form>
             </div>
-        );
+        ); 
     }
 }
 
