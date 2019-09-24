@@ -1,4 +1,14 @@
 
+.profile-container {
+  display: flex;
+}
+
+.profile-left-bar {
+  display: flex;
+  width: 30%;
+
+}
+
 #blue-background-image{
   background-image: url("../../background.jpg");
   height: 200px;
@@ -12,17 +22,17 @@
   float: left;
   width: 400px;
   height: 600px;
-  position: absolute;
+
 }
 
 #profile-presentation-profile-picture{
   position: relative;
   left: 100px;
-  bottom: 80px;
+
 }
 
 #username{
-  position: relative;
+  /* position: relative; */
   left: 120px;
   bottom: 80px;
   font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;

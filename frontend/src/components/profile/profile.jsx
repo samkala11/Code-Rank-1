@@ -23,15 +23,16 @@ class Profile extends React.Component {
   
   render() {
    return (
-    <div>
+    <div className="profile-container">
        <div id="blue-background-image">
        </div>
 
-       <div>
+       <div className="profile-left-bar">
+
          <div id="profile-presentation">
            <img id="profile-presentation-profile-picture" src={demouser}/>
              <h2 id="username">Demo User</h2>
-            </div>
+  
            <div id="levels">
              <h1 id="levels-title">Level</h1>
              <h3 id="level-x-target">1</h3>
@@ -53,9 +54,9 @@ class Profile extends React.Component {
                  <img id="chart" src={graph}/>
                    {/* <!-- WHERE THE CHART WILL BE LIVING - look for cool animations when the page refreshes--> */}
                     </div>
-  
-                </dl>
-            </div>
+                  </dl>
+                </div>
+              </div>
            </div>
 
            <div id="top-right-container">
