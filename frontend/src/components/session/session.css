@@ -10,7 +10,7 @@
 .session-form-content {
   display: flex;
   flex-direction: column;
-  font-family: "GalaxieCopernicus-Book";
+  font-family: 'Fira Code';
   padding: 30px;
   width: 480px;
   box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
