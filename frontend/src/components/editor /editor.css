@@ -370,17 +370,11 @@
 .dropdown:hover .dropbtn {
   /* background-color: #64b467; */
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 360a80ef08f4bb3ab8e36cbae0a3b0dbdc69bc47
-=======
->>>>>>> f2e9d665e283e29f366cec638ebb78b24c77926e
 .questions{
     padding-top: 5px;
 }
->>>>>>> b895ae3e984234f60941343a0d13515763df7d69
+
 #timer{
     font-weight: bold;
     color: #333;
