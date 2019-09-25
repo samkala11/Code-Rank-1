@@ -26,8 +26,8 @@ const contests = require("./routes/api/contests");
 
 
 app.use("/api/users", users);
-app.use("/api/problems", problems);
-app.use("/api/languages", languages);
-app.use("/api/solutions", solutions);
-app.use("/api/contests", contests);
+// app.use("/api/problems", problems);
+// app.use("/api/languages", languages);
+// app.use("/api/solutions", solutions);
+// app.use("/api/contests", contests);
 

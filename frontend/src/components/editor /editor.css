@@ -1,18 +1,50 @@
-  /* body {
-        overflow: hidden;
-        background-color: rgb(59, 58, 58);
-    } */
-    #editor {
-        margin: 0;
-        position: absolute;
-        top: 88px;
-        bottom: 100px;
-        left: 284px;
-        right: 480px;
-        box-shadow: 2px 2px #333232;
-        height: 500px;
-    }
- .container {
+/* ============QUESTION CONTENT ====================== */
+
+#editor-container{
+  display: flex;
+  padding-bottom: 200px;
+}
+
+.sidebar{
+  width: 400px;
+  background-color: rgb(231, 247, 244);
+  box-shadow: 1px 1px #d0d6d8;
+  z-index: 2;
+  margin-left: 24px;
+  padding: 10px;
+  border-radius: 40px;
+  height: 450px;
+  margin-top: 90px;
+}
+
+.sidebar .question, .sidebar .description, .language{
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     }
+
+.question, .sidebar{
+    font-size: 15px;
+}
+.question{
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+
+#editor {
+    margin: 0;
+    position: absolute;
+    top: 88px;
+    bottom: 100px;
+    left: 284px;
+    right: 480px;
+    box-shadow: 2px 2px #333232;
+    height: 500px;
+    background-color: red;
+}
+
+
+
+ #container {
   text-align: center;
   padding-top: 40px;
 }
@@ -65,15 +97,7 @@ button {
     left: 60px;
     background-color: rgb(204, 53, 53);
 }
-.sidebar{
-    height: 900px;
-    width: 275px;
-    background-color: rgb(231, 247, 244);
-    box-shadow: 1px 1px #d0d6d8;
-    position: fixed;
-    z-index: 4;
-    top: 89px;
-}
+
 .skip-text{
     padding-top: 75px;
     font-family: "Lucida Console", sans-serif, monospace;
@@ -126,37 +150,29 @@ button {
   background: rgb(87, 255, 143);
   position: absolute;
   transition: all .3s ease-Out;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
 .button:hover #translate, .button:hover #translate-2 {
   left: 0;
 }
+
 .button {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-.sidebar .question, .sidebar .description, .language{
-    /* font-family: arial,sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode'; */
-    /* font-family: 'Allerta Stencil'; */
-    font-family: 'Didact Gothic';
-     }
-.question, .sidebar{
-    /* text-shadow: 0px 1px gray; */
-    font-size: 15px;
-}
-.question{
-    font-weight: 1000;
-}
-.sidebar{
-    margin-top: 0px;
-}
+
+
+
 #menu .content-2{
     border: 1px solid rgb(102, 102, 102);
     text-decoration: none;
     color: rgb(219, 219, 219);
     padding: 7px; 
     border-radius: 10px;
-    font-family: 'Allerta Stencil';
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 12px;
 }
 #menu #content-1 {
@@ -166,7 +182,7 @@ button {
     text-decoration: none;
     padding: 7px; 
     border-radius: 10px;
-    font-family: 'Allerta Stencil';
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 12px;
 }
 #menu a:hover {
@@ -198,7 +214,7 @@ button {
   z-index: 1;
 }
 .dropbtn {
-  background-color: rgb(64, 170, 64);
+  /* background-color: rgb(64, 170, 64); */
   color: white;
   padding: 9px;
   font-size: 12px;
@@ -209,7 +225,7 @@ button {
   display: block;
 }
 .dropdown:hover .dropbtn {
-  background-color: #64b467;
+  /* background-color: #64b467; */
 }
 .questions{
     padding-top: 5px;
@@ -248,7 +264,7 @@ button {
     font-size: 35px; 
     width: 32;
     border-radius: 1px;
-    font-family: 'Allerta Stencil';
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
     /* font-size: 12px; */
 }
 .board-button:hover{
