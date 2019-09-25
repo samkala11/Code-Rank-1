@@ -7,10 +7,11 @@ class Editor extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      practice: true
+      // practice: true,
+      isWhiteBoardVisible: false
     }
   }
-
+  
   componentWillMount() {
     
   }
@@ -18,68 +19,83 @@ class Editor extends React.Component {
 
   }
 
+  toggleWhiteBoard = () => {
+    this.setState(prevState => ({ isWhiteBoardVisible: !prevState.isWhiteBoardVisible}))
+  }
+
 
   render() {
+    const { isWhiteBoardVisible } = this.state
     return (
       <div id="editor-container">
-            <div className="sidebar">
-                <div className="question">
-                    Question 1
-                </div>
-                <br/>
-                <div className="description">
-                    Write a recursive function, binarySearch(sortedArray, target), that returns
-                    the index of target in sortedArray, or -1 if it is not found. 
-                    <br/>
-                    Do NOT use the built-in Array.prototype.indexOf or Array.prototype.includes methods 
-                    in your implementation.
-                    <br/>
-                    <br/>
-                    Here's a quick summary of the binary search algorithm:
-                 
-                    Start by looking at the middle item of the array. If it matches the target,
-                    return its index. Otherwise, recursively search either the left or the right
-                    half of the array until the target is found or the base case (empty array) is
-                    reached.
-                </div>
-                <div className="inner-sidebar"> 
+          <div className="sidebar">
+              <div className="question">
+                  Question 1
+              </div>
+              <br/>
+              <div className="description">
+                  Write a recursive function, binarySearch(sortedArray, target), that returns
+                  the index of target in sortedArray, or -1 if it is not found. 
+                  <br/>
+                  Do NOT use the built-in Array.prototype.indexOf or Array.prototype.includes methods 
+                  in your implementation.
+                  <br/>
+                  <br/>
+                  Here's a quick summary of the binary search algorithm:
+                
+                  Start by looking at the middle item of the array. If it matches the target,
+                  return its index. Otherwise, recursively search either the left or the right
+                  half of the array until the target is found or the base case (empty array) is
+                  reached.
+              </div>
 
-                    <div className="button"> 
-                        <div id="translate"></div>
-                        <a> Previous </a>
-                    </div>
-
-                    <div className="button"> 
-                            <div id="translate"></div>
-                            <a> Next 
-                            </a>
-               
-                    </div>
-                    <div className="button skip"> 
-                            <div id="translate"></div>
-                            <a> Skip Question </a>
-                    </div>
+              <div id="inner-sidebar">  
+                  <button id="button-question-text">Previous</button>
+                      {/* This button should be available only starting the second question */}
+                  <button id="button-question-text"> Next</button>
+                      {/* This button should be showing up after the user clicks Run and passes everything */}
+                  <button id="button-question-skip-text">Skip question </button>
+                      {/* This button can either make the user move to the next level if he is in the last question or move to next question */}
+              </div>
                     <br/> 
-                    <i className="icon ion-md-arrow"></i>
-                    <p className="skip-text"> Skip all questions and proceed to next level
+                    <p id="skip-all-questions"> Skip all questions and proceed to next level
                     
-                    <div className="button"> 
-                            <div id="translate"></div>
-                            <a> Skip All </a>
+                    <div > 
+                      <button id="button-skip-all"> Skip All </button>
+                            {/* This button makes the user move to next level without progress */}
                     </div>
                     </p>
-              </div>
-          <div id="menu">
-              {/* <div className="questions"> 
-                  <a id="content-1" href="#content1">Question 1</a>
-                  <a className="content-2" href="#content2">Question 2</a>
-                  <a className="content-2" href="#content3">Question 3</a>
-                  <a className="content-2" href="#content4">Question 4</a>
-                  <a className="content-2" href="#content4">Question 5</a>
-                  <a className="content-2" href="#content4">Question 6</a>
-                  
+            </div>
+             
 
-              </div> */}
+          <div id="questions-editor">
+              <div id="questions"> 
+                  <a id="question-number" href="#content1">Question 1</a>
+                  <a id="question-number" href="#content2">Question 2</a>
+                  <a id="question-number" href="#content3">Question 3</a>
+                  <a id="question-number" href="#content4">Question 4</a>
+                  <a id="question-number" href="#content4">Question 5</a>
+                  <a id="question-number" href="#content4">Question 6</a>
+              </div>
+
+              <div id="editor">
+                
+              </div>
+
+              <div id="buttons-below-editor">
+                  <div id="button-run-question">
+                      <button id="run-text">Run</button>
+                  </div>
+
+                  <div id="button-see-solution">
+                    <button id="solution-text">Solution</button>
+                  </div>
+              </div>
+          </div>   
+
+        <i className="icon ion-md-create board-button" id="board-button" onClick={this.toggleWhiteBoard}></i>
+          <div  className={`whiteboard${isWhiteBoardVisible ? "" : "hidden"}`} >     
+          <textarea id="whiteboard" className="text-area" cols="23" rows="14"> </textarea>          
 
               {/* <div className="dropdown">
                       <button className="dropbtn">Select Language</button>
@@ -90,17 +106,11 @@ class Editor extends React.Component {
                       </div>
               </div> */}
               {/* <p id="timer"> 30m 0s</p> */}
-              {/* <i className="icon ion-md-create board-button"  id="board-button"></i> */}
-        </div>
-
-              <textarea id="codemirror-textarea"> # Enter Code Below </textarea>
-
           
-            <div id="white-board" className="white-board">                      
-            <textarea className="text-area" value="My Notes" cols="22" rows="14"> </textarea>          
+                             
             </div>  
         </div>
-    </div>
+    // </div>
 
 
     )
