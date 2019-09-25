@@ -19,10 +19,10 @@ app.listen(port, () => console.log(`Server is running on port ${port}`));
 
 // Routers
 const users = require("./routes/api/users");
-const languages = require("./routes/api/languages");
-const problems = require("./routes/api/problems");
-const solutions = require("./routes/api/solutions");
-const contests = require("./routes/api/contests");
+// const languages = require("./routes/api/languages");
+// const problems = require("./routes/api/problems");
+// const solutions = require("./routes/api/solutions");
+// const contests = require("./routes/api/contests");
 
 
 app.use("/api/users", users);

@@ -6,15 +6,14 @@
   display: flex;
   justify-content: space-between;
 }
-/* html{
+html{
   height: 100vh;
   width: 100vw;
-} */
+}
 
 #logo{
     height: 23px;
     margin-top: 8px;
-    
 }
 
 #profile-picture{

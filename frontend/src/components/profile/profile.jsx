@@ -23,15 +23,18 @@ class Profile extends React.Component {
   
   render() {
    return (
-    <div>
-       <div id="blue-background-image">
-       </div>
+  <div className="profile-main-div"> 
+     
+    <div id="blue-background-image">
+    </div>
 
-       <div>
+    <div className="profile-container">
+      
+      <div className="profile-left-bar">
          <div id="profile-presentation">
            <img id="profile-presentation-profile-picture" src={demouser}/>
              <h2 id="username">Demo User</h2>
-            </div>
+  
            <div id="levels">
              <h1 id="levels-title">Level</h1>
              <h3 id="level-x-target">1</h3>
@@ -53,71 +56,91 @@ class Profile extends React.Component {
                  <img id="chart" src={graph}/>
                    {/* <!-- WHERE THE CHART WILL BE LIVING - look for cool animations when the page refreshes--> */}
                     </div>
-  
-                </dl>
-            </div>
-           </div>
+                  </dl>
+                </div>
+              </div>
+
+        </div>
+            
+            {/* Profile left bar ends here */}
+        <div className="progress-items-container"> 
 
            <div id="top-right-container">
-             <button id="continue-learning">Continue learning</button>
-             <button id="join-contest">Join contest</button>
-             <div id="star">⭐</div>
-             <div id="contest-container">
-               <div id="trophee">🏆</div>
-               <h3 id="number-of-wins">0 wins</h3>
+
+             <div className="top-right-cluster">
+
+               <div id="points-earned-container">
+                 <div id="plus-points">✛</div>
+                 <h3 id="points-earned">10 points earned</h3>
+               </div>
+
              </div>
-             <div id="points-earned-container">
-               <div id="plus-points">✛</div>
-               <h3 id="points-earned">10 points earned</h3>
-             </div>
-             <div id="bottom-right-container">
-               <table id="table">
-                 <tr id="headers-row">
-                   <th id="header-table-text">Problem</th>
-                   <th id="header-table-text">Date</th>
-                   <th id="header-table-text">Time completed</th>
-                   <th id="header-table-text">Thumbs up</th>
-                 </tr>
-                 <tr id="row-number">
-                   <td>1</td>
-                   <td>00-00-0000</td>
-                   <td>2:03</td>
-                   <td>3</td>
-                 </tr>
 
-                 <tr id="row-number">
-                   <td>2</td>
-                   <td>00-00-0000</td>
-                   <td>2:03</td>
-                   <td>3</td>
-                 </tr>
+             <div className="top-left-cluster">
 
-                 <tr id="row-number">
-                   <td>3</td>
-                   <td>00-00-0000</td>
-                   <td>2:03</td>
-                   <td>3</td>
-                 </tr>
+               <div className="learning-contest-buttons">
+               <button id="continue-learning">Continue learning</button>
+                 <button id="join-contest">Join contest <div id="star">⭐</div></button>
+               </div>
 
-                 <tr id="row-number">
-                   <td>4</td>
-                   <td>00-00-0000</td>
-                   <td>2:03</td>
-                   <td>3</td>
-                 </tr>
+              <div id="contest-container">
+                   <div id="trophee">🏆</div>
+                   <h3 id="number-of-wins">0 wins</h3>
+              </div>
+               
+             </div> 
+          </div>
 
-                 <tr id="row-number">
-                   <td>5</td>
-                   <td>00-00-0000</td>
-                   <td>2:03</td>
-                   <td>3</td>
-                 </tr>
+           <div id="bottom-right-container">
+             <table id="table">
+               <tr id="headers-row">
+                 <th id="header-table-text">Problem</th>
+                 <th id="header-table-text">Date</th>
+                 <th id="header-table-text">Time completed</th>
+                 <th id="header-table-text">Thumbs up</th>
+               </tr>
+               <tr id="row-number">
+                 <td>1</td>
+                 <td>00-00-0000</td>
+                 <td>2:03</td>
+                 <td>3</td>
+               </tr>
 
-               </table>
-             </div>
+               <tr id="row-number">
+                 <td>2</td>
+                 <td>00-00-0000</td>
+                 <td>2:03</td>
+                 <td>3</td>
+               </tr>
+
+               <tr id="row-number">
+                 <td>3</td>
+                 <td>00-00-0000</td>
+                 <td>2:03</td>
+                 <td>3</td>
+               </tr>
+
+               <tr id="row-number">
+                 <td>4</td>
+                 <td>00-00-0000</td>
+                 <td>2:03</td>
+                 <td>3</td>
+               </tr>
+
+               <tr id="row-number">
+                 <td>5</td>
+                 <td>00-00-0000</td>
+                 <td>2:03</td>
+                 <td>3</td>
+               </tr>
+
+             </table>
+           </div>
            </div>
          </div>
-    // </div>
+
+
+      </div>
    )
   }
 }
