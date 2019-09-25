@@ -12,10 +12,13 @@ class Editor extends React.Component {
     }
   }
   
+  
   componentWillMount() {
     
   }
   componentDidMount() {
+
+
 
   }
 
@@ -67,6 +70,7 @@ class Editor extends React.Component {
                     </p>
             </div>
              
+          <p id="timer"> 30m 0s</p>
 
           <div id="questions-editor">
               <div id="questions"> 
@@ -84,9 +88,10 @@ class Editor extends React.Component {
 
               <div id="buttons-below-editor">
                   <div id="button-run-question">
-                      <button id="run-text">Run</button>
+                      <button id="run-text">Run
+                      <i class="material-icons" id="play-icon">play_arrow</i></button>
                   </div>
-
+                 
                   <div id="button-see-solution">
                     <button id="solution-text">Solution</button>
                   </div>
@@ -105,7 +110,6 @@ class Editor extends React.Component {
                       <a className="language"href="#">SQL</a>
                       </div>
               </div> */}
-              {/* <p id="timer"> 30m 0s</p> */}
           
                              
             </div>  
