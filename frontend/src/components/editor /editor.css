@@ -198,7 +198,7 @@ button {
   z-index: 1;
 }
 .dropbtn {
-  background-color: rgb(64, 170, 64);
+  /* background-color: rgb(64, 170, 64); */
   color: white;
   padding: 9px;
   font-size: 12px;
@@ -208,9 +208,9 @@ button {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown:hover .dropbtn {
+/* .dropdown:hover .dropbtn {
   background-color: #64b467;
-}
+} */
 .questions{
     padding-top: 5px;
 }
