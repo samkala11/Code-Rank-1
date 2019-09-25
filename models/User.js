@@ -21,12 +21,12 @@ const UserSchema = new Schema({
     enrolledLanguages: [
         {
         type: String, //would be either an array of JS & Ruby or an Array of one language
-        required: true
+        required: false
         }
     ],
     currentLanguage:{
         type: String, // Will be an array of one element
-        required: true
+        required: false
     },
 
     languageLevels:[
@@ -56,7 +56,7 @@ const UserSchema = new Schema({
 
     online:{
         type: Boolean,
-        required: true
+        required: false
     },
     admin:{
         type: Boolean,

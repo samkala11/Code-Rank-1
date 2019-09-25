@@ -44,7 +44,7 @@
   margin-right: 9px;
   padding: 6px;
   border-radius: 4px;
-  background-color: snow;
+  /* background-color: snow; */
 }
 
 #button-question-text:hover{
@@ -58,13 +58,21 @@
   cursor: pointer;
 }
 
+#button-question-text:focus{
+  outline: none;
+}
+
 #button-question-skip-text{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 13px;
   margin-right: 9px;
   padding: 6px;
   border-radius: 4px;
-  background-color: snow;
+  /* background-color: snow; */
+}
+
+#button-question-skip-text:focus{
+  outline:none;
 }
 
 #button-question-skip-text:hover{
@@ -73,7 +81,7 @@
   margin-right: 9px;
   padding: 6px;
   border-radius: 4px;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   color: red;
   cursor: pointer;
 }
@@ -94,10 +102,47 @@
   font-size: 13px;
   border-radius: 4px;
   padding: 3px;
+  
 }
 
 #button-skip-all:hover{
+  margin-left: 260px;
+  margin-top: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 13px;
+  border-radius: 4px;
+  padding: 3px;
   cursor: pointer;
+  color: red;
+}
+
+#button-skip-all:focus{
+  outline: none;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 
@@ -152,7 +197,6 @@
 #whiteboard{
   margin-top: 90px;
   margin-left: 40px;
-  
 }
 
 
@@ -173,47 +217,72 @@
 
 #buttons-below-editor{
   margin-top: 570px;
-  margin-left: 610px;
-  width: 600px;
-  display: inline-block;
+  margin-left: 580px;
+  width: 800px;
+  /* display: inline-block; */
+  display: flex;
 }
 
-#button-run-question{
-  float: left;
+#button-run-question{ 
+ 
   margin-right: 16px;
-  
-}
+} 
+
 
 #run-text{
-  font-size: 13px;
+  font-size: 13px; 
   font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 12px;
-}
+ border-radius: 20px;
+ padding: 7px;
+ width: 80px;
+}  
 
 #run-text:hover{
+  font-size: 13px; 
   font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  cursor: pointer
+ border-radius: 20px;
+ padding: 7px;
+ width: 80px;
+ color: green;
+ cursor: pointer;
+}  
+
+#run-text:focus{
+  outline: none
+}
+
+#play-icon{
+  font-size: 12px;
+  position: relative;
+  top: 2px; 
 }
 
 #button-see-solution{
 }
 
 #solution-text{
-  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 13px;
+ font-size: 13px; 
+ font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ border-radius: 20px;
+ padding: 7px;
+ width: 80px;
 }
 
 #solution-text:hover{
+  font-size: 13px; 
   font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  cursor: pointer
+  border-radius: 20px;
+  padding: 7px;
+  width: 80px;
+  color: #a40606;
+  background-color: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+  cursor: pointer;
+} 
+
+#solution-text:focus{
+  outline: none
 }
 
- #container {
-  text-align: center;
-  padding-top: 40px;
-}
 /* Reset */
 
 #container{
@@ -272,8 +341,7 @@
 }
 #translate {
   transform: rotate(10deg);
-  width: 100%;
-  height: 250%;
+
   left: -200px;
   top: -30px;
   background: rgb(55, 56, 56);
@@ -282,7 +350,7 @@
 }
 #translate-2 {
   transform: rotate(10deg);
-  width: 100%;
+
   height: 250%;
   left: -200px;
   top: -30px;
@@ -315,26 +383,9 @@
     font-size: 12px;
     margin-right: 25px 
 }
-#menu  {
-    color: rgb(62, 65, 77);
-    background-color:  rgb(219, 219, 219);
-    border: 1px solid rgb(102, 102, 102);
-    text-decoration: none;
-    margin-right: 25px; 
-    border-radius: 10px;
-    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 12px;
-}
-#menu a:hover {
-    color: rgb(62, 65, 77);
-    background-color:  rgb(219, 219, 219);
-}
-#menu{
-    padding-top: 47px;
-    padding-left: 279px;
-    display: flex;
-    flex-direction: row;
-}
+
+
+
 .dropdown{
     padding-left: 245px;
     z-index: 120;
@@ -381,11 +432,13 @@
     text-align: center;
     background-color: rgb(202, 202, 10);
     padding: 5px;
-    margin-left: 13px;
-    margin-top: 0px;
+    margin-left: 1300px;
+    margin-top: 25px;
     border-radius: 20px;
     font-family: monospace;
     font-size: 17px;
+    height: 25px;
+    position: absolute;
 }
 .white-board{
     /* background-color: rgb(255, 245, 112); */
