@@ -224,15 +224,12 @@ button {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-<<<<<<< HEAD
 /* .dropdown:hover .dropbtn {
   background-color: #64b467;
 } */
-=======
 .dropdown:hover .dropbtn {
   /* background-color: #64b467; */
 }
->>>>>>> 360a80ef08f4bb3ab8e36cbae0a3b0dbdc69bc47
 .questions{
     padding-top: 5px;
 }
