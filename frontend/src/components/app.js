@@ -23,7 +23,6 @@ const App = () => (
                 <ProtectedRoute exact path="/editor" component={EditorContainer}/>
             </Switch>
          <Footer/>
-
     </div>
 );
 
