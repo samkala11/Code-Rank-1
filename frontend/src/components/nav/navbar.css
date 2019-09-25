@@ -13,7 +13,7 @@ html{
 
 #logo{
     height: 23px;
-    margin-top: 2px;   
+    margin-top: 8px;
 }
 
 #profile-picture{
@@ -21,14 +21,12 @@ html{
   position: relative;
   float: right;
   bottom: 4px;
-  background-color: black;
+  /* background-color: black; */
   border-radius: 7px;
 }
 /* Dropdown Button */
 .dropbtn {
-  /* background-color: #4CAF50; */
   color: white;
-  /* padding: 6px; */
   font-size: 16px;
   border: none;  
   left: 900px;

@@ -14,6 +14,17 @@
     <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../../codemirror/lib/codemirror.css" />
+    
+    <script type="text/javascript" src="../../codemirror/lib/codemirror.js"> </script>
+    
+    
+    <link rel="stylesheet" href="../../codemirror/theme/dracula.css" />
+    <script type="text/javascript" src="../../codemirror/mode/xml/xml.js"></script>
+    <script type="text/javascript" src="../../codemirror/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="../../codemirror/mode/ruby/ruby.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -40,6 +51,18 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+        <script>
+
+          var code = document.getElementById('codemirror-textarea')
+
+          var editor = CodeMirror.fromTextArea(code, {
+            lineNumbers: true,
+            mode: "ruby",
+            theme: "dracula"
+          });
+
+        </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
