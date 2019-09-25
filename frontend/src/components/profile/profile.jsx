@@ -25,31 +25,38 @@ class Profile extends React.Component {
    return (
   <div className="profile-main-div"> 
      
-    <div id="blue-background-image">
+    <div className="background-image">
+      <img id="profile-presentation-profile-picture" src={demouser} />
     </div>
 
-    <div className="profile-container">
-      
+    <div className="profile-container"> 
       <div className="profile-left-bar">
+
          <div id="profile-presentation">
-           <img id="profile-presentation-profile-picture" src={demouser}/>
-             <h2 id="username">Demo User</h2>
+           <div className="username-container">
+            <h2 id="username">Demo User</h2>
+           </div>
   
            <div id="levels">
-             <h1 id="levels-title">Level</h1>
+            <div><h1 id="levels-title">Level</h1></div>
+            
+            <div className="level-numbers">
              <h3 id="level-x-target">1</h3>
              <h3 id="level-x">2</h3>
              <h3 id="level-x">3</h3>
              <h3 id="level-x">4</h3>
              <h3 id="level-x">5</h3>
+            </div>
+
            </div>
 
            <div id="progress">
              <progress id="user-progress" value="44" max="100"></progress>
              <h3 id="exercises-completed">44/100</h3>
              {/* <!-- The value will be updated based on each user --> */}
-            </div>
-           <div>
+          </div>
+
+           <div className="minutes-practiced-container">
              <dl>
                <dt id="minutes-practiced-title">Minutes practiced this week</dt>
                <div id="progress-chart-container">
@@ -59,10 +66,10 @@ class Profile extends React.Component {
                   </dl>
                 </div>
               </div>
-
         </div>
             
             {/* Profile left bar ends here */}
+            
         <div className="progress-items-container"> 
 
            <div id="top-right-container">
