@@ -3,6 +3,17 @@ import { withRouter } from 'react-router-dom';
 import './editor.css';
 
 
+import {UnControlled as CodeMirror2} from 'react-codemirror2'
+
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/material.css';
+require('codemirror/mode/javascript/javascript');
+require('codemirror/mode/ruby/ruby');
+
+
+// import cd from '../../codemirror/lib/codemirror';
+
+
 class Editor extends React.Component {
   constructor(props) {
     super(props)
@@ -28,7 +39,16 @@ class Editor extends React.Component {
 
 
   render() {
-    const { isWhiteBoardVisible } = this.state
+    const { isWhiteBoardVisible } = this.state;
+
+    // var code = document.getElementById('codemirror-textarea')
+
+    // var editor = cd.CodeMirror.fromTextArea(code, {
+    //   lineNumbers: true,
+    //   mode: "ruby",
+    //   theme: "dracula"
+    // });
+
     return (
       <div id="editor-container">
           <div className="sidebar">
@@ -82,8 +102,24 @@ class Editor extends React.Component {
                   <a id="question-number" href="#content4">Question 6</a>
               </div>
 
-              <div id="editor">
-                
+              <div id="editorr">
+                  {/* <textarea id="codemirror-textarea"> </textarea> */}
+
+                  <CodeMirror2
+
+                      value='def end'
+                      
+                      options={{
+                      mode: 'javascript',
+                      theme: 'material',
+                      lineNumbers: true
+                    }}
+
+                    onChange={(editor, data, value) => {
+                  }}/>
+
+
+
               </div>
 
               <div id="buttons-below-editor">
