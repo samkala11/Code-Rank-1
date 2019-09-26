@@ -21,12 +21,12 @@ const UserSchema = new Schema({
     enrolledLanguages: [
         {
         type: String, //would be either an array of JS & Ruby or an Array of one language
-        required: true
+        required: false
         }
     ],
     currentLanguage:{
         type: String, // Will be an array of one element
-        required: true
+        required: false
     },
 
     languageLevels:[
@@ -42,7 +42,7 @@ const UserSchema = new Schema({
 
         language: {
             type: String,
-            required: true
+            required: false
         }///!\ DO WE NEED THE LEVEL LANGUAGE HERE?
         // What are we going to show in the user's level page if, for example, he is in Level 1 for JS and Level 3 in Ruby ? 
     }
@@ -56,7 +56,7 @@ const UserSchema = new Schema({
 
     online:{
         type: Boolean,
-        required: true
+        required: false
     },
     admin:{
         type: Boolean,

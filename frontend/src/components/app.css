@@ -24,3 +24,17 @@ time, mark, audio, video {
     display: flex;
     flex-direction: column;
 }
+
+
+/* CSS Related to editor */
+.CodeMirror{
+	width: 800px;
+	height: 600px;
+	margin-left: 20px;
+	top: 20px;
+}
+
+.board-button{
+	padding-left: 150px;
+}
+
