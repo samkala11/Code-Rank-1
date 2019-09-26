@@ -8,8 +8,14 @@ class Splash extends React.Component {
     return (
       <div className="splash-container">
         <div className="splash-hero-message">  
-          <h1 className="splash-hero-h1">// Welcome to CodeRank. <br/> Join over 4 developers. <br/>
-           Practice coding, prepare for interviews, and get hired.
+          <h1 className="splash-hero-h1">
+            Welcome to CodeRank. <br/> 
+            Join over 4 developers. 
+            <br/>
+            <br/>
+            Practice coding, 
+            prepare for interviews, 
+            and get hired!
           </h1>
         </div>
           <SignupContainer/>

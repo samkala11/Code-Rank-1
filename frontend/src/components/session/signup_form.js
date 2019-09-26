@@ -58,6 +58,7 @@ class SignupForm extends React.Component {
 
     render() {
         return (
+    
             <div className="session-form-container">
                 <form onSubmit={this.handleSubmit}>
 

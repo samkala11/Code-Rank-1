@@ -3,6 +3,7 @@
 .splash-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -13,8 +14,10 @@
     font-family: "Fira Code";
 }
 
-.splash-hero-message {
-    color: white;
+/* .splash-hero-message {
+    background-color: white;
+    
+    color: black;
     font-size: 2.25rem;
     font-size: 2.304vw;
     line-height: 1.75;
@@ -23,13 +26,32 @@
     font-weight: 100;
     width: 100%;
     padding-left: 50px;
+} */
+
+.splash-hero-h1{
+  display: flex;
+  font-size: 40px;
+  align-self: center;
+  font-family: 'Fira Code';
+  padding: 30px;
+  width: 480px;
+  box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+  padding: 25px 25px 30px 25px;
+  padding-bottom: 50px;
+  color: black;
+  border-bottom-left-radius: 15px;
+  padding-top: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: white;
+  font-weight: bold;
 }
 
-.splash-hero-h1 {
+/* .splash-hero-h1 {
     font-size: 40px;
     align-self: center;
     font-family: Didact "Didact Gothic";
-}
+} */
 
 .coderank-team-links {
     position: static;
