@@ -38,6 +38,8 @@
     margin-bottom: 20px;
 }
 
+html,body{overflow-x: hidden;}
+
 #button-question-text{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 13px;

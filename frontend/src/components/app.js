@@ -7,6 +7,7 @@ import Splash from './splash/splash';
 import Footer from './footer/footer';
 import EditorContainer from './editor /editor_container';
 import  ProfileContainer from './profile/profile_container';
+import CompetitionContainer from './competition/competition_index_container';
 import { Switch, Route, Redirect, Link } from 'react-router-dom';
 import './app.css';
 
@@ -21,6 +22,7 @@ const App = () => (
                 <AuthRoute exact path="/signup" component={SignupFormContainer} />
                 <ProtectedRoute exact path="/profile" component={ProfileContainer}/>
                 <ProtectedRoute exact path="/editor" component={EditorContainer}/>
+                <ProtectedRoute exact path="/competition" component={CompetitionContainer} />
             </Switch>
          <Footer/>
     </div>

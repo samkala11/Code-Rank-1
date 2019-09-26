@@ -94,6 +94,7 @@ class Editor extends React.Component {
                  
                   <div id="button-see-solution">
                     <button id="solution-text">Solution</button>
+                    {/* <button id="solution-text">Submit all</button> */}
                   </div>
               </div>
           </div>   
