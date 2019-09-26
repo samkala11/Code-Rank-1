@@ -31,18 +31,12 @@
 background-image: url("../../background.jpg");
 height: 200px;
 opacity: 0.90;
-/* margin-top: 2px; */
 width: 100%;
-/* position: absolute; */
-/* z-index: 23; */
 }
 
 
 
 #profile-presentation{
-  /* display: flex; */
-  /* top: 0; */
-  /* border-right: solid black; */
   display: flex;
   border-width: 1px;
   align-content: center;
@@ -52,15 +46,12 @@ width: 100%;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 170px;
-  /* background-color: red; */
 }
 
 
 #profile-presentation-profile-picture{
   position: relative;
-  /* left: 100px; */
-  /* align-self: center; */
-  /* z-index: 100; */
+
   padding-left: 5.8%;
   padding-top: 130px;
 }

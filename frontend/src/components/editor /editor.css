@@ -32,7 +32,6 @@
 
 #inner-sidebar{
     padding-top: 40px;
-    /* align-items: center; */
     padding-left: 50px;
     display: inline-block;
     margin-bottom: 20px;
@@ -46,7 +45,6 @@ html,body{overflow-x: hidden;}
   margin-right: 9px;
   padding: 6px;
   border-radius: 4px;
-  /* background-color: snow; */
 }
 
 #button-question-text:hover{

@@ -3,3 +3,81 @@
 }
 
 
+.background{
+    background-color: rgb(59, 58, 58);
+    height: 1000px;
+    width: 100%;
+}
+
+#trophee-competition{
+    font-size: 120px;
+    position: relative;
+    left: 750px;
+    top: 100px;
+    /* align-items: center; */
+}
+
+#there-is-a-contest-coming-in{
+    border: solid rgb(254,236,90) 2px;
+    opacity: 100;
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    background-color:rgb(254,236,90);
+    top: 200px;
+    left: 70px;
+}
+
+#there-is-a-contest-coming-in:hover{
+    border: solid rgb(254,236,90) 2px;
+    opacity: 100;
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    background-color:rgb(254,236,90);
+    top: 200px;
+    left: 70px;
+    cursor: pointer;
+}
+
+#there-is-a-contest-coming-in:focus{
+    outline: none;
+
+}
+
+#there-is-a-contest-coming-in:active{
+    margin: 1px 1px 0;
+    box-shadow: -1px -1px 1px #000;
+}
+
+#time-countdown{
+    display: inline-block;
+}
+
+#join-competition{
+    font-family: Fira Code;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#contest-number{
+    font-family: Fira Code;
+    font-size: 17px;
+}
+
+#starts-in{
+    margin-top: 10px;
+    font-family: Fira Code;
+}
+
+#clock{
+    position: relative;
+    top: 8px;
+    right: 8px;
+}
+
+
+
