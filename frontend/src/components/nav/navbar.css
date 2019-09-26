@@ -38,7 +38,7 @@
   color: white;
   font-size: 16px;
   border: none;  
-  left: 900px;
+  left: 800px;
   margin-bottom: 5px;
 }
 
@@ -46,7 +46,7 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  /* left: 900px; */
+  right: 0px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -57,7 +57,8 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  right: 1px;
+  right: 0px;
+  /* bottom: 1px; */
   /* border-radius: 1px; */
   font-family: "Fira Code";
 }

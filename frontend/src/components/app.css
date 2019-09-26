@@ -32,3 +32,21 @@ time, mark, audio, video {
 		width: 100vw;
 		height: 100vh;
 }
+
+
+/* CSS Related to editor */
+.CodeMirror{
+	margin: 0;
+    position: absolute;
+    top: 185px;
+    bottom: 100px;
+    left: 450px;
+    right: 400px;
+    box-shadow: 2px 2px #333232;
+    height: 500px;
+}
+
+.board-button{
+	padding-left: 150px;
+}
+

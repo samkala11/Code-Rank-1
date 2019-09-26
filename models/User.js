@@ -42,7 +42,7 @@ const UserSchema = new Schema({
 
         language: {
             type: String,
-            required: true
+            required: false
         }///!\ DO WE NEED THE LEVEL LANGUAGE HERE?
         // What are we going to show in the user's level page if, for example, he is in Level 1 for JS and Level 3 in Ruby ? 
     }
