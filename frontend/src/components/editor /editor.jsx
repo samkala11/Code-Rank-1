@@ -102,10 +102,10 @@ class Editor extends React.Component {
                   <a id="question-number" href="#content4">Question 6</a>
               </div>
 
-              <div id="editorr">
+              <div >
                   {/* <textarea id="codemirror-textarea"> </textarea> */}
 
-                  <CodeMirror2
+            <CodeMirror2 id="editor"
 
                       value='def end'
                       

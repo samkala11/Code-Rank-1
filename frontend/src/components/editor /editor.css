@@ -14,7 +14,7 @@
   padding: 10px;
   border-radius: 40px;
   height: 450px;
-  margin-top: 130px;
+  margin-top: 140px;
 }
 
 .sidebar .question, .sidebar .description, .language{
@@ -156,8 +156,8 @@ html,body{overflow-x: hidden;}
     left: 450px;
     right: 400px;
     box-shadow: 2px 2px #333232;
-    height: 500px;
-    background-color: lightgray;
+    height: 200px;
+    /* background-color: lightgray; */
 }
 
 #questions-editor{
@@ -301,7 +301,7 @@ html,body{overflow-x: hidden;}
 }
 
 .board-button{  
-    margin-left: 260px;
+    margin-left: 140px;
     /* color: rgb(210, 212, 219); */
     text-decoration: none;
     font-size: 35px; 
