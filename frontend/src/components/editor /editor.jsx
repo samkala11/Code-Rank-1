@@ -114,6 +114,7 @@ class Editor extends React.Component {
                     </p>
             </div>
              
+           <p id="timer"> 30m 0s</p>
             <div className="timer-container">
               <Countdown/>
             </div>

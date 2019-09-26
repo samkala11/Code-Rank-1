@@ -9,6 +9,7 @@ class NavBar extends React.Component {
     constructor(props) {
         super(props);
         this.logoutUser = this.logoutUser.bind(this);
+        this.loginUser = this.loginUser.bind(this);
         this.getLinks = this.getLinks.bind(this);
     }
 
@@ -16,6 +17,11 @@ class NavBar extends React.Component {
         // debugger
         e.preventDefault();
         this.props.logout();
+    }
+
+    loginUser(e) {
+        e.preventDefault();
+        this.props.login();
     }
 
     // Selectively render links dependent on whether the user is logged in
@@ -27,7 +33,7 @@ class NavBar extends React.Component {
                     <div id="navigation-bar">
                         <a href="#"><img id="logo" src={logo} alt=""></img></a>
                             <div className="dropdown">
-                            <button className="dropbtn"><img id="profile-picture" src={demouser} alt=""></img></button>
+                            <button className="dropbtn"><i className="fas fa-user-alt" id="profile-picture"></i></button>
                                     
                                     <div className="dropdown-content">
                                         <a href="#">Link 1</a>
@@ -43,7 +49,7 @@ class NavBar extends React.Component {
                 <div>
                     <div id="navigation-bar">
                         <a href="#"><img id="logo" src={logo} alt=""></img></a> 
-                        <span><Link to="/login"></Link></span>
+                        <span> <Link to="/login"></Link></span>
                     </div>
                 </div>
         

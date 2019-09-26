@@ -60,9 +60,10 @@ class LoginForm extends React.Component {
 
     render() {
         return (
+        <div className="session-background"> 
             <div className="session-form-container">
                 <form onSubmit={this.handleSubmit}>
-
+    
                     <div className="session-form-content">
                         <input type="text"
                             value={this.state.email}
@@ -84,6 +85,7 @@ class LoginForm extends React.Component {
                     </div>
                 </form>
             </div>
+        </div>
         );
     }
 }

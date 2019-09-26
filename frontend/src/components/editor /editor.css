@@ -426,7 +426,20 @@ html,body{overflow-x: hidden;}
     padding-top: 5px;
 }
 
-
+#timer{
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    background-color: rgb(202, 202, 10);
+    padding: 5px;
+    margin-left: 1300px;
+    margin-top: 25px;
+    border-radius: 20px;
+    font-family: monospace;
+    font-size: 17px;
+    height: 25px;
+    position: absolute;
+}
 .white-board{
     /* background-color: rgb(255, 245, 112); */
     align-self:center;

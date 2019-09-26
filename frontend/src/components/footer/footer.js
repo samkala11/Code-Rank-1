@@ -8,16 +8,16 @@ const Footer = () => (
     <div className="footer-top-links">
       <div className="platform-links">
         <a href="/" id="platform-link-boxes">
-          <i className="fas fa-male"></i>
+          <i class="fas fa-user-alt"></i>
           </a>
         <a href="/" id="platform-link-boxes">
-          <i className="fas fa-male"></i>
+          <i class="fas fa-user-alt"></i>
           </a>
         <a href="/" id="platform-link-boxes">
-          <i className="fas fa-male"></i>
+          <i class="fas fa-user-alt"></i>
           </a>
         <a href="/" id="platform-link-boxes">
-          <i className="fas fa-male"></i>
+          <i class="fas fa-user-alt"></i>
           </a>
 
       </div>

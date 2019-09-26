@@ -1,17 +1,17 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Redirect } from 'react-router-dom';
 import demouser from '../../demo-user.png'
 import graph from '../../gray-bar-chart.png'
 import './profile.css';
-
 
 
 class Profile extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      currentLanguage: ''
+      
     }
+    this.handleRedirect = this.handleRedirect.bind(this);
   }
 
   componentWillMount() {
@@ -20,18 +20,27 @@ class Profile extends React.Component {
   componentDidMount(){
   }
   
+
+  handleRedirect(e) {
+    e.preventDefault();
+    this.props.history.push('/editor');
+  }
   
   render() {
    return (
   <div className="profile-main-div"> 
      
     <div className="background-image">
-      <img id="profile-presentation-profile-picture" src={demouser} />
+      {/* <img id="profile-presentation-profile-picture" src={demouser} /> */}
+      <div className="profile-picture-parent-container"> 
+        <div className="profile-presentation-profile-picture">
+          <i className="fas fa-user-alt" id="profile-image-icon"></i>
+          </div>
+      </div>  
     </div>
 
     <div className="profile-container"> 
       <div className="profile-left-bar">
-
          <div id="profile-presentation">
            <div className="username-container">
             <h2 id="username">Demo User</h2>
@@ -72,10 +81,15 @@ class Profile extends React.Component {
             
         <div className="progress-items-container"> 
 
+           <div className="learning-contest-buttons-container">
+             <div className="learning-contest-buttons">
+             <button id="continue-learning" onClick={this.handleRedirect}>Continue learning</button>
+             <button id="join-contest">Join contest <div id="star">⭐</div></button>
+             </div>
+           </div>
+
            <div id="top-right-container">
-
-             <div className="top-right-cluster">
-
+             <div className="top-left-cluster">
                <div id="points-earned-container">
                  <div id="plus-points">✛</div>
                  <h3 id="points-earned">10 points earned</h3>
@@ -83,13 +97,7 @@ class Profile extends React.Component {
 
              </div>
 
-             <div className="top-left-cluster">
-
-               <div className="learning-contest-buttons">
-               <button id="continue-learning">Continue learning</button>
-                 <button id="join-contest">Join contest <div id="star">⭐</div></button>
-               </div>
-
+             <div className="top-right-cluster">
               <div id="contest-container">
                    <div id="trophee">🏆</div>
                    <h3 id="number-of-wins">0 wins</h3>
