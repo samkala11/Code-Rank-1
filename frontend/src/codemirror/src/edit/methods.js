@@ -1,4 +1,5 @@
 import { deleteNearSelection } from "./deleteNearSelection.js"
+
 import { commands } from "./commands.js"
 import { attachDoc } from "../model/document_data.js"
 import { activeElt, addClass, rmClass } from "../util/dom.js"
