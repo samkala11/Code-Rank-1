@@ -2,11 +2,13 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './editor.css';
 
-
+import Countdown from '../timer/timer'
 import {UnControlled as CodeMirror2} from 'react-codemirror2'
 
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/material.css';
+import 'codemirror/theme/moxer.css';
+
 require('codemirror/mode/javascript/javascript');
 require('codemirror/mode/ruby/ruby');
 
@@ -41,13 +43,35 @@ class Editor extends React.Component {
   render() {
     const { isWhiteBoardVisible } = this.state;
 
-    // var code = document.getElementById('codemirror-textarea')
 
-    // var editor = cd.CodeMirror.fromTextArea(code, {
-    //   lineNumbers: true,
-    //   mode: "ruby",
-    //   theme: "dracula"
-    // });
+              // var date = new Date();
+              // date.setMinutes(date.getMinutes() + 30);
+              // // Set the date we're counting down to
+              // var countDownDate = date.getTime();
+              // // Update the count down every 1 second
+              // var x = setInterval(function () {
+              //   // Get today's date and time
+              //   var now = new Date().getTime();
+              //   // Find the distance between now and the count down date
+              //   var distance = countDownDate - now;
+              //   // Time calculations for days, hours, minutes and seconds
+              //   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              //   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              //   // Output the result in an element with id="timer"
+              //   if (document.getElementById("timer")) {
+                
+              //   document.getElementById("timer").innerHTML =
+              //     + minutes + "m " + seconds + "s "; }
+
+              //   // If the count down is over, write some text 
+              //   if (distance < 0) {
+              //     clearInterval(x);
+              //     document.getElementById("timer").innerHTML = "EXPIRED";
+              //   }
+              // }, 1000);
+
+
+              
 
     return (
       <div id="editor-container">
@@ -90,33 +114,41 @@ class Editor extends React.Component {
                     </p>
             </div>
              
-          <p id="timer"> 30m 0s</p>
+            <div className="timer-container">
+              <Countdown/>
+            </div>
 
-          <div id="questions-editor">
-              <div id="questions"> 
-                  <a id="question-number" href="#content1">Question 1</a>
-                  <a id="question-number" href="#content2">Question 2</a>
-                  <a id="question-number" href="#content3">Question 3</a>
-                  <a id="question-number" href="#content4">Question 4</a>
-                  <a id="question-number" href="#content4">Question 5</a>
-                  <a id="question-number" href="#content4">Question 6</a>
+
+            <div className="timer-and-questions"> 
+              <div id="questions-editor">
+
+                <div id="questions"> 
+                    <a id="question-number" href="#content1">Question 1</a>
+                    <a id="question-number" href="#content2">Question 2</a>
+                    <a id="question-number" href="#content3">Question 3</a>
+                    <a id="question-number" href="#content4">Question 4</a>
+                    <a id="question-number" href="#content4">Question 5</a>
+                    <a id="question-number" href="#content4">Question 6</a> 
+                </div>
+
+            
               </div>
+            </div>
 
-              <div >
-                  {/* <textarea id="codemirror-textarea"> </textarea> */}
+          <div className="editor-container">
 
             <CodeMirror2 id="editor"
 
-                      value='def end'
-                      
-                      options={{
-                      mode: 'javascript',
-                      theme: 'material',
-                      lineNumbers: true
-                    }}
+              value='function a () { }'
+                    
+              options={{
+              mode: 'javascript',
+              theme: 'moxer',
+              lineNumbers: true
+                }}
 
-                    onChange={(editor, data, value) => {
-                  }}/>
+              onChange={(editor, data, value) => {
+            }}/>
 
 
 
@@ -133,7 +165,7 @@ class Editor extends React.Component {
                     {/* <button id="solution-text">Submit all</button> */}
                   </div>
               </div>
-          </div>   
+            
 
         <i className="icon ion-md-create board-button" id="board-button" onClick={this.toggleWhiteBoard}></i>
           <div  className={`whiteboard${isWhiteBoardVisible ? "" : "hidden"}`} >     
