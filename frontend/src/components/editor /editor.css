@@ -1,10 +1,21 @@
 /* ============QUESTION CONTENT ====================== */
 
-#editor-container{
+#editorpage-container{
   display: flex;
-  padding-bottom: 200px;
+  /* flex-direction: column; */
+  padding-bottom: 100px;
+  width: 90%;
+  /* z-index: 10; */
 }
 
+
+.supermain-container{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(189, 189, 189);
+  width: 100vw;
+  height: 90vh;
+}
 .sidebar{
   width: 400px;
   background-color: rgb(231, 247, 244);
@@ -162,6 +173,7 @@ html,body{overflow-x: hidden;}
   margin-left: 5px;
   width: 460px;
   height: 620px;
+  background-color: rgb(189, 189, 189);
 }
 
 #questions{
@@ -216,11 +228,11 @@ html,body{overflow-x: hidden;}
 }
 
 #buttons-below-editor{
-  margin-top: 570px;
-  margin-left: 580px;
-  width: 800px;
-  /* display: inline-block; */
-  display: flex;
+      margin-top: 653px;
+       margin-left: -900px;
+    width: 800px;
+    /* display: inline-block; */
+    display: flex;
 }
 
 #button-run-question{ 
@@ -299,7 +311,7 @@ html,body{overflow-x: hidden;}
 }
 
 .board-button{  
-    margin-left: 140px;
+    /* margin-left: 140px; */
     /* color: rgb(210, 212, 219); */
     text-decoration: none;
     font-size: 35px; 
@@ -313,8 +325,27 @@ html,body{overflow-x: hidden;}
     /* background-color: rgb(210, 212, 219);
     color: rgb(48, 44, 70); */
     cursor: pointer;
+    
+
+
 }
 
+.Whiteboard-container{
+  margin-left: -400px;
+  /* z-index: 10;  */
+  background-color: rgb(189, 189, 189);
+  display: flex;
+  /* justify-content: flex-start; */
+  width: 10%;
+ 
+}
+
+#whiteboard{
+
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px yellow;
+
+}
 
 .submit{
     top:  481px;
@@ -454,7 +485,7 @@ html,body{overflow-x: hidden;}
   left: 600px;
 }
 
-#editor-container{
+#editorpage-container{
   background-color: rgb(189, 189, 189);
 }
 
@@ -533,18 +564,22 @@ html,body{overflow-x: hidden;}
 
 .countdown-container button {
   /* margin-left: 700px; */
-  flex: 2;
+  /* flex: 2; */
   width: 90px;
   height: 30px;
 }
 
 .countdown-container .Countdown{
-  flex: 1;
+  /* flex: 1; */
   width: 90px;
   margin-right: 100px;
 }
 
 .countdown-container{
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-container{
+
 }

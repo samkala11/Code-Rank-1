@@ -43,38 +43,11 @@ class Editor extends React.Component {
   render() {
     const { isWhiteBoardVisible } = this.state;
 
-
-              // var date = new Date();
-              // date.setMinutes(date.getMinutes() + 30);
-              // // Set the date we're counting down to
-              // var countDownDate = date.getTime();
-              // // Update the count down every 1 second
-              // var x = setInterval(function () {
-              //   // Get today's date and time
-              //   var now = new Date().getTime();
-              //   // Find the distance between now and the count down date
-              //   var distance = countDownDate - now;
-              //   // Time calculations for days, hours, minutes and seconds
-              //   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              //   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-              //   // Output the result in an element with id="timer"
-              //   if (document.getElementById("timer")) {
-                
-              //   document.getElementById("timer").innerHTML =
-              //     + minutes + "m " + seconds + "s "; }
-
-              //   // If the count down is over, write some text 
-              //   if (distance < 0) {
-              //     clearInterval(x);
-              //     document.getElementById("timer").innerHTML = "EXPIRED";
-              //   }
-              // }, 1000);
-
-
-              
-
+            
     return (
-      <div id="editor-container">
+       <div className="supermain-container">
+      <div id="editorpage-container">
+
           <div className="sidebar">
               <div className="question">
                   Question 1
@@ -153,7 +126,7 @@ class Editor extends React.Component {
 
 
 
-              </div>
+          </div>
 
               <div id="buttons-below-editor">
                   <div id="button-run-question">
@@ -168,23 +141,18 @@ class Editor extends React.Component {
               </div>
             
 
-        <i className="icon ion-md-create board-button" id="board-button" onClick={this.toggleWhiteBoard}></i>
-          <div  className={`whiteboard${isWhiteBoardVisible ? "" : "hidden"}`} >     
-          <textarea id="whiteboard" className="text-area" cols="23" rows="14"> </textarea>          
+        
+      </div>
 
-              {/* <div className="dropdown">
-                      <button className="dropbtn">Select Language</button>
-                      <div className="dropdown-content">
-                      <a className="language" href="#">Javascript </a>
-                      <a className="language" href="#">Ruby </a>
-                      <a className="language"href="#">SQL</a>
-                      </div>
-              </div> */}
-          
-                             
+      <div className="Whiteboard-container"> 
+        <i className="icon ion-md-create board-button" id="board-button" onClick={this.toggleWhiteBoard}></i>
+            <div  className={`whiteboard${isWhiteBoardVisible ? "" : "hidden"}`} >     
+             <textarea id="whiteboard" className="text-area" cols="23" rows="14"> </textarea>                          
             </div>  
-        </div>
-    // </div>
+      </div>
+
+
+      </div>
 
 
     )

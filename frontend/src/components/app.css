@@ -26,6 +26,11 @@ time, mark, audio, video {
 	height: 100vh;
 }
 
+/* body{
+	 background-color: rgb(189, 189, 189);
+
+} */
+
 .main-content {
     display: flex;
 		flex-direction: column;
